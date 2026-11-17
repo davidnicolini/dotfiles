@@ -40,3 +40,4 @@ cd ~/dotfiles
 ⌜─ nvim/                       # Neovim Lua setup
 └─ zsh/                        # .zshrc and custom Oh My Zsh theme
 ```
+
