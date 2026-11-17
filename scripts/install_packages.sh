@@ -36,7 +36,7 @@ install_neovim() {
     local arch
     arch="$(uname -m)"
 
-    if [ "$arch" = "x86_64" ] && curl -fLo /tmp/nvim-linux-x86_64.tar.gz "https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz"\; then
+    if [ "$arch" = "x86_64" ] && curl -fLo /tmp/nvim-linux-x86_64.tar.gz "https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz"; then
         sudo rm -rf /opt/nvim /opt/nvim-linux-x86_64
         sudo tar -C /opt -xzf /tmp/nvim-linux-x86_64.tar.gz
         sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
