@@ -35,5 +35,5 @@ jobs:
       - name: Verify script syntax and OS detection
         run: |
           bash -n install.sh scripts/*.sh
-          source scripts/detect_os.sh
+          . ./scripts/detect_os.sh
           echo "Detected: $OS_NAME ($PKG_MANAGER)"
