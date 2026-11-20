@@ -8,6 +8,19 @@ fi
 
 echo "==> Configurando stack de desenvolvimento (WSL2=$IS_WSL)..."
 
+if command -v pacman >/dev/null 2>&1; then
+  sudo pacman -S --needed --noconfirm curl unzip maven docker docker-compose
+elif command -v dnf >/dev/null 2>&1; then
+  sudo dnf install -y curl unzip maven
+elif command -v apt-get >/dev/null 2>&1; then
+  sudo apt-get update && sudo apt-get install -y curl unzip maven
+fi
+
+if [ "$IS_WSL" = false ] && command -v systemctl >/dev/null 2>&1 && systemctl list-unit-files docker.service >/dev/null 2>&1; then
+  sudo systemctl enable --now docker
+  sudo usermod -aG docker "$USER" || true
+fi
+
 if ! command -v mise >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/mise" ]; then
   curl -fsSL https://mise.run | sh
 fi
