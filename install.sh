@@ -39,3 +39,4 @@ echo ">>> $MSG_DONE"
 if [[ "${XDG_CURRENT_DESKTOP:-}" == *"GNOME"* ]] && [[ -x "$HOME/dotfiles/scripts/gnome-hyprland-keybinds.sh" ]]; then
   "$HOME/dotfiles/scripts/gnome-hyprland-keybinds.sh"
 fi
+bash "$HOME/dotfiles/scripts/setup-dev-stack.sh"
