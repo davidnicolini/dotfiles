@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0](https://github.com/davidnicolini/dotfiles/compare/v1.0.0...v1.1.0) (2026-11-20)
+
+
+### Features
+
+* **dev:** add mise jdk 17/21/27, postgres template and wsl2-aware setup ([bed39e0](https://github.com/davidnicolini/dotfiles/commit/bed39e09d48e54ea2bf19ba7224a32878eb9a32a))
+* **dev:** auto-install maven and docker across arch, fedora and debian ([e11d025](https://github.com/davidnicolini/dotfiles/commit/e11d025985d598e432ea5bd171a1c0548b74f461))
+* **gnome:** add Hyprland-style keybindings setup script for Fedora ([edba533](https://github.com/davidnicolini/dotfiles/commit/edba53335ed6761d1bcb5a9f79dc96454b08ab23))
+* **zsh,fastfetch:** apply Red Hat red prompt and logo on Fedora ([c9270f0](https://github.com/davidnicolini/dotfiles/commit/c9270f0c8181a7363e24ac36f52c1518f721709f))
+* **zsh,git:** apply red Debian/Fedora prompt themes and fix GCM path ([e2d06ac](https://github.com/davidnicolini/dotfiles/commit/e2d06ac687343e5fcccb2fb919481f467d275b70))
+* **zsh,git:** configure universal gitconfig with personal email and red OS themes ([da26a81](https://github.com/davidnicolini/dotfiles/commit/da26a81737ee07ea7686544c3805b86031376e39))
+* **zsh:** add Fedora theme and automatic distro detection ([ca13514](https://github.com/davidnicolini/dotfiles/commit/ca135143275b5e0c0cb5cafad69efd16897180f4))
+
+
+### Bug Fixes
+
+* **zsh:** enforce dynamic red Debian/Fedora prompt at end of zshrc ([a8f57f2](https://github.com/davidnicolini/dotfiles/commit/a8f57f298961b97c67769a0b8a0d1aec7a71037f))
+
 ## 1.0.0 (2026-11-17)
 
 
