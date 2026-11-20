@@ -35,3 +35,7 @@ if [ -n "$ZSH_PATH" ] && [ "$SHELL" != "$ZSH_PATH" ]; then
 fi
 
 echo ">>> $MSG_DONE"
+
+if [[ "${XDG_CURRENT_DESKTOP:-}" == *"GNOME"* ]] && [[ -x "$HOME/dotfiles/scripts/gnome-hyprland-keybinds.sh" ]]; then
+  "$HOME/dotfiles/scripts/gnome-hyprland-keybinds.sh"
+fi
