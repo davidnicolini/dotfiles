@@ -1,0 +1,12 @@
+[user]
+	name = David Nicolini
+	email = ewersom2017@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[core]
+	editor = nvim
+	autocrlf = input
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/ucrt64/bin/git-credential-manager.exe

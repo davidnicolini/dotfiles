@@ -26,7 +26,7 @@ if ! command -v mise >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/mise" ]; then
 fi
 export PATH="$HOME/.local/bin:$PATH"
 mise use -g java@temurin-21
-mise install java@temurin-17 java@temurin-27
+[ "$IS_WSL" = false ] && mise install java@temurin-17 java@temurin-27 || true
 
 mkdir -p "$HOME/containers/postgres"
 cp -n "$HOME/dotfiles/templates/postgres/docker-compose.yml" "$HOME/containers/postgres/docker-compose.yml"
