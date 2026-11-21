@@ -123,3 +123,12 @@ else
   fi
 fi
 PROMPT="${OS_ICON}%n%{$reset_color%} %(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[cyan]%}%c%{$reset_color%} \$(git_prompt_info)"
+
+# Fastfetch wrapper: use Red Hat logo on Fedora, native logos on Arch/Debian
+fastfetch() {
+  if [[ -f /etc/os-release ]] && grep -q '^ID=fedora' /etc/os-release; then
+    command fastfetch --logo redhat "$@"
+  else
+    command fastfetch "$@"
+  fi
+}
