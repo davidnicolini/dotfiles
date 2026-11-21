@@ -117,7 +117,7 @@ else
     . /etc/os-release
     case "$ID" in
       arch)   OS_ICON="%{$fg[cyan]%} %{$fg[cyan]%}" ;;
-      fedora) OS_ICON="%{$fg_bold[blue]%} %{$fg_bold[blue]%}" ;;
+      fedora) OS_ICON="%{$fg[red]%} %{$fg[red]%}" ;;
       debian) OS_ICON="%{$fg[red]%} %{$fg[red]%}" ;;
     esac
   fi
